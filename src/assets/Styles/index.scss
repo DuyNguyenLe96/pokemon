@@ -1,0 +1,24 @@
+@import 'base';
+@import 'variables';
+
+.pokemon-app {
+  display: grid;
+  grid-template-rows: 200px calc(100vh - 200px);
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 45px;
+      font-weight: 400;
+      font-family: cursive;
+      color: #1cdce8;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 1rem;
+  }
+}

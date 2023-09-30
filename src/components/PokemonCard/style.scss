@@ -1,0 +1,40 @@
+.card-container {
+  background-color: red;
+  color: #fff;
+  max-width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 350px;
+
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  grid-template-rows: 1fr 50px 1fr;
+
+  .pokemon-id {
+    grid-column: 3;
+    margin: 10px 40px 0 0;
+    font-size: 2.5rem;
+    color: hsla(0, 0%, 100%, 0.422);
+    display: flex;
+    justify-content: end;
+  }
+  .pokemon-name-types {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 40px;
+    > ul {
+      list-style: none;
+      display: contents;
+    }
+  }
+  .pokemon-image {
+    grid-column: 3;
+    grid-row: 2/4;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
